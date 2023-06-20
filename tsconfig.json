@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "baseUrl": "./src",
+        "declaration": true,
+        "removeComments": true,
+        "noEmitOnError": true,
+        // "emitDecoratorMetadata": true,
+        // "experimentalDecorators": true,
+        "outDir": "./dist"
+        // "baseUrl": "./",
+        // "incremental": true,
+        // "noImplicitAny": true,
+        // "strictNullChecks": true,
+        // "resolveJsonModule": true,
+        // "allowJs": true,
+        // "esModuleInterop": true
+    },
+    "include": ["src/**/*", "types/**/*"],
+    "exclude": ["**/*.test.ts"]
+}

@@ -1,0 +1,13 @@
+diff --git a/node_modules/@celo/contractkit/lib/contract-cache.d.ts b/node_modules/@celo/contractkit/lib/contract-cache.d.ts
+index 8b5185b..507a82b 100644
+--- a/node_modules/@celo/contractkit/lib/contract-cache.d.ts
++++ b/node_modules/@celo/contractkit/lib/contract-cache.d.ts
+@@ -144,7 +144,7 @@ export declare class WrapperCache implements ContractCacheType {
+     /**
+      * Get Contract wrapper
+      */
+-    getContract<C extends ValidWrappers>(contract: C, address?: string): Promise<NonNullable<WrapperCacheMap[C]>>;
++    getContract<C extends keyof WrapperCacheMap>(contract: C, address?: string): Promise<NonNullable<WrapperCacheMap[C]>>;
+     invalidateContract<C extends ValidWrappers>(contract: C): void;
+ }
+ export {};
